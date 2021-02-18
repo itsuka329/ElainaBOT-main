@@ -206,7 +206,7 @@ module.exports = tobz = async (tobz, message) => {
 
         const serial = sender.id
         const isAdmin = adminNumber.includes(sender.id)
-        const ownerNumber = '6281311850715@c.us'
+        const ownerNumber = '6282215393363@c.us'
         const isOwner = ownerNumber.includes(sender.id)
 
         if (isGroupMsg && GroupLinkDetector && !isGroupAdmins && !isAdmin && !isOwner){
@@ -988,7 +988,7 @@ module.exports = tobz = async (tobz, message) => {
             if(isReg(obj)) return
             if(cekumur(cekage)) return
             if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
-            if (args.length === 1) return tobz.reply(from, `Kirim perintah *#blackpink [ Teks ]*, contoh *#blackpink Elaina*`, id)
+            if (args.length === 1) return tobz.reply(from, `Kirim perintah *#blackpink [ Teks ]*, contoh *.blackpink Otsuka*`, id)
             tobz.reply(from, mess.wait, id)
             const blpk = body.slice(11)
             if (blpk.length > 10) return tobz.reply(from, '*Teks Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
@@ -1004,7 +1004,50 @@ module.exports = tobz = async (tobz, message) => {
             if (thndr.length > 10) return tobz.reply(from, '*Teks Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
             await tobz.sendFileFromUrl(from, `https://api.vhtear.com/thundertext?text=${thndr}&apikey=${vhtearkey}`, 'thndr.jpg', '', id)
             break
-        case prefix+'pornhub':
+
+            case prefix+'Water':
+                if(isReg(obj)) return
+                if(cekumur(cekage)) return
+                if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                if (args.length === 1) return tobz.reply(from, `Kirim perintah *#thunder [ Teks ]*, contoh *.Water Otsuka*`, id)
+                tobz.reply(from, mess.wait, id)
+                const Water = body.slice(9)
+                if (Water.length > 10) return tobz.reply(from, '*Teks Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                await tobz.sendFileFromUrl(from, `https://api.vhtear.com/metal_maker?text=${Water}&apikey=${vhtearkey}`, 'Water.jpg', '', id)
+                break
+            case prefix+'fire':
+                if(isReg(obj)) return
+                if(cekumur(cekage)) return
+                if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                if (args.length === 1) return tobz.reply(from, `Kirim perintah *#thunder [ Teks ]*, contoh *.thunder Otsuka*`, id)
+                tobz.reply(from, mess.wait, id)
+                const fire = body.slice(9)
+                if (fire.length > 10) return tobz.reply(from, '*Teks Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                await tobz.sendFileFromUrl(from, `https://api.vhtear.com/fire_maker?text=${fire}&apikey=${vhtearkey}`, 'fire.jpg', '', id)
+                break
+
+                case prefix+'metal':
+                    if(isReg(obj)) return
+                    if(cekumur(cekage)) return
+                    if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                    if (args.length === 1) return tobz.reply(from, `Kirim perintah *.thunder [ Teks ]*, contoh *.thunder Otsuka*`, id)
+                    tobz.reply(from, mess.wait, id)
+                    const metal = body.slice(9)
+                    if (metal.length > 10) return tobz.reply(from, '*Teks Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                    await tobz.sendFileFromUrl(from, `https://api.vhtear.com/metal_maker?text=${metal}&apikey=${vhtearkey}`, 'thndr.jpg', '', id)
+                    break
+                case prefix+'balloonmaker':
+                    if(isReg(obj)) return
+                    if(cekumur(cekage)) return
+                    if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                    if (args.length === 1) return tobz.reply(from, `Kirim perintah *.balloonmaker [ Teks ]*, contoh *.thunder Otsuka*`, id)
+                    tobz.reply(from, mess.wait, id)
+                    const balloonmaker = body.slice(9)
+                    if (balloonmaker.length > 10) return tobz.reply(from, '*Teks Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                    await tobz.sendFileFromUrl(from, `https://api.vhtear.com/balloonmaker?text=${balloonmaker}&apikey=${vhtearkey}`, 'balloonmaker.jpg', '', id)
+                    break
+
+        case prefix+'padlock':
             if(isReg(obj)) return
             if(cekumur(cekage)) return
             if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
@@ -1016,12 +1059,325 @@ module.exports = tobz = async (tobz, message) => {
                 const lpornhub2 = argz[2]
                 if (lpornhub.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
                 if (lpornhub2.length > 10) return tobz.reply(from, '*Teks2 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
-                tobz.sendFileFromUrl(from, `https://api.vhtear.com/pornlogo?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
+                tobz.sendFileFromUrl(from, `https://api.vhtear.com/padlock?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
                 await limitAdd(serial)
             } else {
                 await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *#pornhub [ |Teks1|Teks2 ]*, contoh *#pornhub |Tobz|Dev Elaina*`, id)
             }
             break
+            case prefix+'wetglass':
+                if(isReg(obj)) return
+                if(cekumur(cekage)) return
+                if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                if (args.length === 1) return tobz.reply(from, `Kirim perintah *#pornhub [ |Teks ]*, contoh *.wetglass Otsuka*`, id)
+                argz = body.trim().split('|')
+                if (argz.length >= 2) {
+                    tobz.reply(from, mess.wait, id)
+                    const lpornhub = argz[1]
+                    const lpornhub2 = argz[2]
+                    if (lpornhub.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                    tobz.sendFileFromUrl(from, `https://api.vhtear.com/wetglass?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
+                    await limitAdd(serial)
+                } else {
+                    await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *.wetglass [ |Teks1|Teks2 ]*, contoh *.wetglass Otsuka*`, id)
+                }
+                break
+                case prefix+'stylelogo':
+                    if(isReg(obj)) return
+                    if(cekumur(cekage)) return
+                    if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                    if (args.length === 1) return tobz.reply(from, `Kirim perintah *#stylelogo [ |Teks1|Teks2 ]*, contoh *#pornhub |Tobz|Dev Otsuka*`, id)
+                    argz = body.trim().split('|')
+                    if (argz.length >= 2) {
+                        tobz.reply(from, mess.wait, id)
+                        const lpornhub = argz[1]
+                        const lpornhub2 = argz[2]
+                        if (lpornhub.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                        tobz.sendFileFromUrl(from, `https://api.vhtear.com/stylelogo?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
+                        await limitAdd(serial)
+                    } else {
+                        await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *#stylelogo [ |Teks1|Teks2 ]*, contoh *#pornhub |Tobz|Dev Otsuka*`, id)
+                    }
+                    break
+                    case prefix+'watercolor':
+                        if(isReg(obj)) return
+                        if(cekumur(cekage)) return
+                        if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                        if (args.length === 1) return tobz.reply(from, `Kirim perintah *.watercolor [ |Teks ]*, contoh *#pornhub Otsuka*`, id)
+                        argz = body.trim().split('|')
+                        if (argz.length >= 2) {
+                            tobz.reply(from, mess.wait, id)
+                            const lpornhub = argz[1]
+                            const lpornhub2 = argz[2]
+                            if (lpornhub.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                            tobz.sendFileFromUrl(from, `https://api.vhtear.com/watercolor?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
+                            await limitAdd(serial)
+                        } else {
+                            await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *.watercolor [ |Teks*, contoh *.watercolor Otsuka*`, id)
+                        }
+                        break
+                        case prefix+'avatarwolf':
+                            if(isReg(obj)) return
+                            if(cekumur(cekage)) return
+                            if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                            if (args.length === 1) return tobz.reply(from, `Kirim perintah *#avatarwolf [ |Teks1|Teks2 ]*, contoh *#pornhub |Tobz|Dev Otsuka*`, id)
+                            argz = body.trim().split('|')
+                            if (argz.length >= 2) {
+                                tobz.reply(from, mess.wait, id)
+                                const lpornhub = argz[1]
+                                const lpornhub2 = argz[2]
+                                if (lpornhub.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                                tobz.sendFileFromUrl(from, `https://api.vhtear.com/avatarwolf?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
+                                await limitAdd(serial)
+                            } else {
+                                await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *.avatarwolf [ |Teks1|Teks2 ]*, contoh *#pornhub |Tobz|Dev Otsuka*`, id)
+                            }
+                            break
+                            case prefix+'bannerff':
+                                if(isReg(obj)) return
+                                if(cekumur(cekage)) return
+                                if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                                if (args.length === 1) return tobz.reply(from, `Kirim perintah *.bannerff [ |Teks1|Teks2 ]*, contoh *.bannerff Otsuka*`, id)
+                                argz = body.trim().split('|')
+                                if (argz.length >= 2) {
+                                    tobz.reply(from, mess.wait, id)
+                                    const lpornhub = argz[1]
+                                    const lpornhub2 = argz[2]
+                                    if (lpornhub.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                                    tobz.sendFileFromUrl(from, `https://api.vhtear.com/bannerff?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
+                                    await limitAdd(serial)
+                                } else {
+                                    await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *.bannerff [ |Teks1|Teks2 ]*, contoh *.pornhub |Tobz|Dev Otsuka*`, id)
+                                }
+                                break
+                                case prefix+'logoff':
+                                    if(isReg(obj)) return
+                                    if(cekumur(cekage)) return
+                                    if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                                    if (args.length === 1) return tobz.reply(from, `Kirim perintah *#logoff [ |Teks1|Teks2 ]*, contoh *.pornhub |Tobz|Dev Otsuka*`, id)
+                                    argz = body.trim().split('|')
+                                    if (argz.length >= 2) {
+                                        tobz.reply(from, mess.wait, id)
+                                        const lpornhub = argz[1]
+                                        const lpornhub2 = argz[2]
+                                        if (lpornhub.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                                        tobz.sendFileFromUrl(from, `https://api.vhtear.com/logoff?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
+                                        await limitAdd(serial)
+                                    } else {
+                                        await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *.logoff [ |Teks1|Teks2 ]*, contoh *.logoff Otsuka*`, id)
+                                    }
+                                    break
+                                    case prefix+'logoml':
+                                        if(isReg(obj)) return
+                                        if(cekumur(cekage)) return
+                                        if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                                        if (args.length === 1) return tobz.reply(from, `Kirim perintah *.logoml [ |Teks1 ]*, contoh *.logoml Otsuka*`, id)
+                                        argz = body.trim().split('|')
+                                        if (argz.length >= 2) {
+                                            tobz.reply(from, mess.wait, id)
+                                            const lpornhub = argz[1]
+                                            const lpornhub2 = argz[2]
+                                            if (lpornhub.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                                            tobz.sendFileFromUrl(from, `https://api.vhtear.com/logoml?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
+                                            await limitAdd(serial)
+                                        } else {
+                                            await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *.logoml [ |Teks1|Teks2 ]*, contoh *.logoml Otsuka*`, id)
+                                        }
+                                        break
+                                        case prefix+'gamelogo':
+                                            if(isReg(obj)) return
+                                            if(cekumur(cekage)) return
+                                            if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                                            if (args.length === 1) return tobz.reply(from, `Kirim perintah *.pornhub [ |Teks1|Teks2 ]*, contoh *.pornhub Otsuka*`, id)
+                                            argz = body.trim().split('|')
+                                            if (argz.length >= 2) {
+                                                tobz.reply(from, mess.wait, id)
+                                                const lpornhub = argz[1]
+                                                const lpornhub2 = argz[2]
+                                                if (lpornhub.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                                                tobz.sendFileFromUrl(from, `https://api.vhtear.com/gamelogo?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
+                                                await limitAdd(serial)
+                                            } else {
+                                                await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *#pornhub [ |Teks1|Teks2 ]*, contoh *.pornhub Otsuka*`, id)
+                                            }
+                                            break
+                                            case prefix+'galaxytext':
+                                                if(isReg(obj)) return
+                                                if(cekumur(cekage)) return
+                                                if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                                                if (args.length === 1) return tobz.reply(from, `Kirim perintah *.galaxytext [ |Teks1|Teks2 ]*, contoh *.galaxytext Otsuka*`, id)
+                                                argz = body.trim().split('|')
+                                                if (argz.length >= 2) {
+                                                    tobz.reply(from, mess.wait, id)
+                                                    const lpornhub = argz[1]
+                                                    const lpornhub2 = argz[2]
+                                                    if (lpornhub.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                                                    tobz.sendFileFromUrl(from, `https://api.vhtear.com/galaxytext?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
+                                                    await limitAdd(serial)
+                                                } else {
+                                                    await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *.pornhub [ |Teks1|Teks2 ]*, contoh *.galaxytext Otsuka*`, id)
+                                                }
+                                                break
+                                                case prefix+'slidingtext':
+                                                    if(isReg(obj)) return
+                                                    if(cekumur(cekage)) return
+                                                    if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                                                    if (args.length === 1) return tobz.reply(from, `Kirim perintah *.slidingtext [ |Teks1|Teks2 ]*, contoh *.slidingtext |Tobz|Dev Otsuka*`, id)
+                                                    argz = body.trim().split('|')
+                                                    if (argz.length >= 2) {
+                                                        tobz.reply(from, mess.wait, id)
+                                                        const lpornhub = argz[1]
+                                                        const lpornhub2 = argz[2]
+                                                        if (lpornhub.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                                                        if (lpornhub2.length > 10) return tobz.reply(from, '*Teks2 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                                                        tobz.sendFileFromUrl(from, `https://api.vhtear.com/slidingtext?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
+                                                        await limitAdd(serial)
+                                                    } else {
+                                                        await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *.slidingtext [ |Teks1|Teks2 ]*, contoh *.slidingtext Otsuka*`, id)
+                                                    }
+                                                    break
+                                                    case prefix+'emojitopng':
+                                                        if(isReg(obj)) return
+                                                        if(cekumur(cekage)) return
+                                                        if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                                                        if (args.length === 1) return tobz.reply(from, `Kirim perintah *.emojitopng [ |Teks ]*, contoh *.emojitopng Otsuka*`, id)
+                                                        argz = body.trim().split('|')
+                                                        if (argz.length >= 2) {
+                                                            tobz.reply(from, mess.wait, id)
+                                                            const lpornhub = argz[1]
+                                                            const lpornhub2 = argz[2]
+                                                            if (lpornhub.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                                                            tobz.sendFileFromUrl(from, `https://api.vhtear.com/emojitopng?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
+                                                            await limitAdd(serial)
+                                                        } else {
+                                                            await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *.emojitopng [ |Teks1|Teks2 ]*, contoh *.emojitopng Otsuka*`, id)
+                                                        }
+                                                        break
+                                                        case prefix+'pornlogo':
+                                                            if(isReg(obj)) return
+                                                            if(cekumur(cekage)) return
+                                                            if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                                                            if (args.length === 1) return tobz.reply(from, `Kirim perintah *.pornlogo [ |Teks1 ]*, contoh *.pornlogo Otsuka*`, id)
+                                                            argz = body.trim().split('|')
+                                                            if (argz.length >= 2) {
+                                                                tobz.reply(from, mess.wait, id)
+                                                                const lpornhub = argz[1]
+                                                                const lpornhub2 = argz[2]
+                                                                if (lpornhub.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                                                                tobz.sendFileFromUrl(from, `https://api.vhtear.com/pornlogo?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
+                                                                await limitAdd(serial)
+                                                            } else {
+                                                                await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *.pornlogo [ |Teks ]*, contoh *.pornlogo Otsuka*`, id)
+                                                            }
+                                                            break
+                                                            case prefix+'silktext':
+                                                                if(isReg(obj)) return
+                                                                if(cekumur(cekage)) return
+                                                                if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                                                                if (args.length === 1) return tobz.reply(from, `Kirim perintah *#pornhub [ |Teks1|Teks2 ]*, contoh *#pornhub |Tobz|Dev Otsuka*`, id)
+                                                                argz = body.trim().split('|')
+                                                                if (argz.length >= 2) {
+                                                                    tobz.reply(from, mess.wait, id)
+                                                                    const lpornhub = argz[1]
+                                                                    const lpornhub2 = argz[2]
+                                                                    if (lpornhub.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                                                                    tobz.sendFileFromUrl(from, `https://api.vhtear.com/silktext?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
+                                                                    await limitAdd(serial)
+                                                                } else {
+                                                                    await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *#pornhub [ |Teks1|Teks2 ]*, contoh *#pornhub |Tobz|Dev Otsuka*`, id)
+                                                                }
+                                                                break
+                                                                    break
+                                                                    case prefix+'romancetext':
+                                                                        if(isReg(obj)) return
+                                                                        if(cekumur(cekage)) return
+                                                                        if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                                                                        if (args.length === 1) return tobz.reply(from, `Kirim perintah *#romancetext [ |Teks1|Teks2 ]*, contoh *#romancetext |Tobz|Dev|Otsuka*`, id)
+                                                                        argz = body.trim().split('|')
+                                                                        if (argz.length >= 2) {
+                                                                            tobz.reply(from, mess.wait, id)
+                                                                            const lpornhub = argz[1]
+                                                                            const lpornhub2 = argz[2]
+                                                                            if (lpornhub.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                                                                            if (lpornhub2.length > 10) return tobz.reply(from, '*Teks2 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                                                                            tobz.sendFileFromUrl(from, `https://api.vhtear.com/romancetext?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
+                                                                            await limitAdd(serial)
+                                                                        } else {
+                                                                            await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *#romancetext [ |Teks1|Teks2|Teks3 ]*, contoh *#pornhub |Tobz|Dev|Otsuka*`, id)
+                                                                        }
+                                                                        break
+                                                                        case prefix+'googletext':
+                                                                            if(isReg(obj)) return
+                                                                            if(cekumur(cekage)) return
+                                                                            if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                                                                            if (args.length === 1) return tobz.reply(from, `Kirim perintah *#googletext [ [ |Teks1|Teks2|Teks3 ]*, contoh *##googletext |Tobz|Dev|Otsuka*`, id)
+                                                                            argz = body.trim().split('|')
+                                                                            if (argz.length >= 2) {
+                                                                                tobz.reply(from, mess.wait, id)
+                                                                                const lpornhub = argz[1]
+                                                                                const lpornhub2 = argz[2]
+                                                                                if (lpornhub.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                                                                                if (lpornhub2.length > 10) return tobz.reply(from, '*Teks2 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                                                                                tobz.sendFileFromUrl(from, `https://api.vhtear.com/googletext?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
+                                                                                await limitAdd(serial)
+                                                                            } else {
+                                                                                await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *#googletext [ |Teks1|Teks2|Teks3 ]*, contoh *#googletext |Tobz|Dev|Otsuka*`, id)
+                                                                            }
+                                                                            break
+                                                                            case prefix+'glowtext':
+                                                                                if(isReg(obj)) return
+                                                                                if(cekumur(cekage)) return
+                                                                                if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                                                                                if (args.length === 1) return tobz.reply(from, `Kirim perintah *#glowtext [ |Teks1|Teks2 ]*, contoh *#pornhub |Tobz|Dev Elaina*`, id)
+                                                                                argz = body.trim().split('|')
+                                                                                if (argz.length >= 2) {
+                                                                                    tobz.reply(from, mess.wait, id)
+                                                                                    const lpornhub = argz[1]
+                                                                                    const lpornhub2 = argz[2]
+                                                                                    if (lpornhub.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                                                                                    tobz.sendFileFromUrl(from, `https://api.vhtear.com/glowtext?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
+                                                                                    await limitAdd(serial)
+                                                                                } else {
+                                                                                    await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *#glowtext [ |Teks ]*, contoh *#glowtext Otsuka*`, id)
+                                                                                }
+                                                                                break
+                                                                                    case prefix+'glitchtext':
+                                                                                        if(isReg(obj)) return
+                                                                                        if(cekumur(cekage)) return
+                                                                                        if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                                                                                        if (args.length === 1) return tobz.reply(from, `Kirim perintah *#glitchtext [ |Teks1|Teks2 ]*, contoh *#glitchtext |Tobz|Dev Otsuka*`, id)
+                                                                                        argz = body.trim().split('|')
+                                                                                        if (argz.length >= 2) {
+                                                                                            tobz.reply(from, mess.wait, id)
+                                                                                            const lpornhub = argz[1]
+                                                                                            const lpornhub2 = argz[2]
+                                                                                            if (lpornhub.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                                                                                            if (lpornhub2.length > 10) return tobz.reply(from, '*Teks2 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                                                                                            tobz.sendFileFromUrl(from, `https://api.vhtear.com/glitchtext?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
+                                                                                            await limitAdd(serial)
+                                                                                        } else {
+                                                                                            await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *#pornhub [ |Teks1|Teks2 ]*, contoh *#pornhub |Tobz|Dev Elaina*`, id)
+                                                                                        }
+                                                                                        break
+                                                                                        case prefix+'genmeme':
+                                                                                            if(isReg(obj)) return
+                                                                                            if(cekumur(cekage)) return
+                                                                                            if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
+                                                                                            if (args.length === 1) return tobz.reply(from, `Kirim perintah *#genmeme [ |Teks1|Teks2 ]*, contoh *#genmeme |Tobz|Dev Otsuka*`, id)
+                                                                                            argz = body.trim().split('|')
+                                                                                            if (argz.length >= 2) {
+                                                                                                tobz.reply(from, mess.wait, id)
+                                                                                                const lpornhub = argz[1]
+                                                                                                const lpornhub2 = argz[2]
+                                                                                                if (lpornhub.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                                                                                                if (lpornhub2.length > 10) return tobz.reply(from, '*Teks2 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
+                                                                                                tobz.sendFileFromUrl(from, `https://api.vhtear.com/genmeme?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
+                                                                                                await limitAdd(serial)
+                                                                                            } else {
+                                                                                                await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *#genmeme [ |Teks1|Teks2 ]*, contoh *#genmeme |Tobz|Dev Otsuka*`, id)
+                                                                                            }
+                                                                                            break
+
         case prefix+'glitch':
             if(isReg(obj)) return
             if(cekumur(cekage)) return
@@ -1037,7 +1393,7 @@ module.exports = tobz = async (tobz, message) => {
                 tobz.sendFileFromUrl(from, `https://api.vhtear.com/glitchtext?text1=${glitch1}&text2=${glitch2}&apikey=${vhtearkey}`)
                 await limitAdd(serial)
             } else {
-                await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *#glitch [ |Teks1|Teks2 ]*, contoh *#glitch |Tobz|Dev Elaina*`, id)
+                await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *#glitch [ |Teks1|Teks2 ]*, contoh *#glitch |Itsuka|Dev Otsuka*`, id)
             }
             break
         case prefix+'daftar':  // NAMBAHIN NOMOR DI DATABASE
@@ -1047,7 +1403,7 @@ module.exports = tobz = async (tobz, message) => {
                 const namanye = argz[1]
                 const umurnye = argz[2]
                     if(isNaN(umurnye)) return await tobz.reply(from, 'Umur harus berupa angka!!', id)
-                    if(umurnye >= 40) return await tobz.reply(from, 'Kamu terlalu tua, kembali lagi ke masa muda untuk menggunakan Elaina', id)
+                    if(umurnye >= 40) return await tobz.reply(from, 'Kamu terlalu tua, kembali lagi ke masa muda untuk menggunakan Otsuka', id)
                     const jenenge = namanye.replace(' ','')
                     var ceknya = nonye
                         var obj = pendaftar.some((val) => {
@@ -1612,7 +1968,7 @@ ${desc}`)
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
             if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
-            const waifu = await axios.get('https://tobz-api.herokuapp.com/api/waifu?apikey=' + tobzkey)
+            const waifu = await axios.get('https://elaina3.herokuapp.com/api/waifu?apikey=' + tobzkey)
             tobz.sendFileFromUrl(from, waifu.data.image, 'Waifu.jpg', `➸ Name : ${waifu.data.name}\n➸ Description : ${waifu.data.desc}\n\n➸ Source : ${waifu.data.source}`, id)
             await limitAdd(serial)
             break
@@ -1633,7 +1989,7 @@ ${desc}`)
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
             if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
-            const nekonime = await axios.get('https://tobz-api.herokuapp.com/api/nekonime?apikey=' + tobzkey)
+            const nekonime = await axios.get('https://elaina3.herokuapp.com/api/nekonime?apikey=' + tobzkey)
             const nekon = nekonime.data
             if (nekon.result.endsWith('.png')) {
                 var ext = '.png'
@@ -1666,7 +2022,7 @@ ${desc}`)
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
             if (!isNsfw) return tobz.reply(from, 'command/Perintah NSFW belum di aktifkan di group ini!', id)
             if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
-            const trapnime = await axios.get('https://tobz-api.herokuapp.com/api/nsfwtrap?apikey=' + tobzkey)
+            const trapnime = await axios.get('https://elaina3.herokuapp.com/api/nsfwtrap?apikey=' + tobzkey)
             const trapn = trapnime.data.result
             if (trapn.result.endsWith('.png')) {
                 var ext = '.png'
@@ -1682,7 +2038,7 @@ ${desc}`)
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
             if (!isNsfw) return tobz.reply(from, 'command/Perintah NSFW belum di aktifkan di group ini!', id)
             if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
-            const hentai = await axios.get('https://tobz-api.herokuapp.com/api/hentai?apikey=' + tobzkey)
+            const hentai = await axios.get('https://elaina3.herokuapp.com/api/hentai?apikey=' + tobzkey)
             const henta = hentai.data
             if (henta.result.endsWith('.png')) {
                 var ext = '.png'
@@ -1698,7 +2054,7 @@ ${desc}`)
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
             if (!isNsfw) return tobz.reply(from, 'command/Perintah NSFW belum di aktifkan di group ini!', id)
             if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
-            const nsfwneko = await axios.get('https://tobz-api.herokuapp.com/api/nsfwneko?apikey=' + tobzkey)
+            const nsfwneko = await axios.get('https://elaina3.herokuapp.com/api/nsfwneko?apikey=' + tobzkey)
             const nsfwn = nsfwneko.data
             if (nsfwn.result.endsWith('.png')) {
                 var ext = '.png'
@@ -1713,7 +2069,7 @@ ${desc}`)
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
             if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
-            const ranime = await axios.get('https://tobz-api.herokuapp.com/api/randomanime?apikey=' + tobzkey)
+            const ranime = await axios.get('https://elaina3.herokuapp.com/api/randomanime?apikey=' + tobzkey)
             const ranimen = ranime.data
             if (ranimen.result.endsWith('.png')) {
                 var ext = '.png'
@@ -1728,7 +2084,7 @@ ${desc}`)
             if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
             if (!isNsfw) return tobz.reply(from, 'command/Perintah NSFW belum di aktifkan di group ini!', id)
             await limitAdd(serial)
-            const sblow = await axios.get('https://tobz-api.herokuapp.com/api/nsfwblowjob?apikey=' + tobzkey)
+            const sblow = await axios.get('https://elaina3.herokuapp.com/api/nsfwblowjob?apikey=' + tobzkey)
             const rblow = sblow.data
             tobz.sendFileFromUrl(from, rblow.result, `RandoBlow${ext}`, 'Random Blowjob!', id)
             break
@@ -1737,7 +2093,7 @@ ${desc}`)
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
             if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
-            const shug = await axios.get('https://tobz-api.herokuapp.com/api/hug?apikey=' + tobzkey)
+            const shug = await axios.get('https://elaina3.herokuapp.com/api/hug?apikey=' + tobzkey)
             const rhug = shug.data
             tobz.sendFileFromUrl(from, rhug.result, `RandomHug${ext}`, 'Random Hug!', id)
             break
@@ -1746,7 +2102,7 @@ ${desc}`)
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
             if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
-            const scry = await axios.get('https://tobz-api.herokuapp.com/api/cry?apikey=' + tobzkey)
+            const scry = await axios.get('https://elaina3.herokuapp.com/api/cry?apikey=' + tobzkey)
             const rcry = scry.data
             tobz.sendFileFromUrl(from, rcry.result, `RandomCry${ext}`, 'Random Cry!', id)
             await limitAdd(serial)
@@ -1756,7 +2112,7 @@ ${desc}`)
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
             if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
-            const skiss = await axios.get('https://tobz-api.herokuapp.com/api/kiss?apikey=' + tobzkey)
+            const skiss = await axios.get('https://elaina3.herokuapp.com/api/kiss?apikey=' + tobzkey)
             const rkiss = skiss.data
             tobz.sendFileFromUrl(from, rkiss.result, `RandomKiss${ext}`, 'Random Kiss!', id)
             await limitAdd(serial)
@@ -1816,7 +2172,7 @@ ${desc}`)
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
             if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
-            const skya = await axios.get('https://tobz-api.herokuapp.com/api/quotesnime/random?apikey=' + tobzkey)
+            const skya = await axios.get('https://elaina3.herokuapp.com/api/quotesnime/random?apikey=' + tobzkey)
             skya_ = skya.data
             tobz.reply(from, `➸ *Quotes* : ${skya_.quote}\n➸ *Character* : ${skya_.character}\n➸ *Anime* : ${skya_.anime}`, id)
             await limitAdd(serial)
@@ -2504,45 +2860,45 @@ ${desc}`)
             if(isReg(obj)) return
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
-            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6281311850715', id)
+            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6282215393363', id)
           break
         case prefix+'getnhentai': // DOWNLOADER NHENTAI PDF FROM #NHENTAI
             if(isReg(obj)) return
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
-            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6281311850715', id)
+            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6282215393363', id)
           break
         case prefix+'xvideos': // SEARCH VIDEO FROM XVIDEOS
             if(isReg(obj)) return
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
-            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6281311850715', id)
+            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6282215393363', id)
             break
         case prefix+'getxvideos': // DOWNLOADER VIDEO FROM #VIDEO
             if(isReg(obj)) return
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
-            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6281311850715', id)
+            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6282215393363', id)
             break
         case prefix+'video': // SEARCH VIDEO FROM YOUTUBE
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
-            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6281311850715', id)
+            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6282215393363', id)
             break
         case prefix+'getvideo': // DOWNLOADER VIDEO FROM #VIDEO
             if(isReg(obj)) return
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
-            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6281311850715', id)
+            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6282215393363', id)
             break
         case prefix+'music': // SEARCH MUSIC FROM YOUTUBE
             if(isReg(obj)) return
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
-            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6281311850715', id)
+            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6282215393363', id)
             break
         case prefix+'getmusic': // DOWNLOADER MUSIC FROM #MUSIC
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
-            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6281311850715', id)
+            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6282215393363', id)
             break
         case prefix+'gdrive':
             if(isReg(obj)) return
@@ -2584,7 +2940,6 @@ ${desc}`)
             if(isReg(obj)) return
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
-            if (!isNsfw) return tobz.reply(from, 'command/Perintah NSFW belum di aktifkan di group ini!', id)
             if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
             if (args.length === 1) return tobz.reply(from, 'Kirim perintah *#xnxx [linkXnxx]*, untuk contoh silahkan kirim perintah *#readme*')
             if (!args[1].match(isUrl) && !args[1].includes('xnxx.com')) return tobz.reply(from, mess.error.Iv, id)
@@ -2886,7 +3241,7 @@ ${desc}`)
              if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
              if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
              const jreng = body.slice(7)
-             if (!jreng) return tobz.reply(from, 'Kirim perintah *#tahta [teks]*\n\nContoh *#tahta elaina*', id)
+             if (!jreng) return tobz.reply(from, 'Kirim perintah *#tahta [teks]*\n\nContoh *#tahta Otsuka*', id)
              if (jreng.length > 7) return tobz.reply(from, 'Maksimal 7 Huruf!', id)
              tobz.sendText(from, '_Sedang diproses, mohon tunggu sebentar!..._', id)
              await tobz.sendFileFromUrl(from, `https://api.vhtear.com/hartatahta?text=${jreng}&apikey=${vhtearkey}`,`${jreng}.jpg`,`Harta Tahta ${jreng}`, id)        
@@ -3781,7 +4136,7 @@ ${desc}`)
             tobz.reply(from, 'Succes leave all group!', id)
             break
         case prefix+'clearall':
-            if (!isOwner) return tobz.reply(from, 'Perintah ini hanya untuk Owner Elaina', id)
+            if (!isOwner) return tobz.reply(from, 'Perintah ini hanya untuk Owner Otsuka', id)
             const allChatz = await tobz.getAllChats()
             for (let dchat of allChatz) {
                 await tobz.deleteChat(dchat.id)
@@ -3903,21 +4258,25 @@ ${desc}`)
             break
         case prefix+'odelete':
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group', id)
-            if (!isOwner, !isAdmin) return tobz.reply(from, 'Perintah ini hanya untuk Admin Elaina', id)
             if (!quotedMsg) return tobz.reply(from, 'Salah!!, kirim perintah *#delete [tagpesanbot]*', id)
             if (!quotedMsgObj.fromMe) return tobz.reply(from, 'Salah!!, Bot tidak bisa mengahpus chat user lain!', id)
             tobz.deleteMessage(quotedMsgObj.chatId, quotedMsgObj.id, false)
             break
         case prefix+'delete':
             if (!isGroupMsg) return tobz.reply(from, 'Fitur ini hanya bisa di gunakan dalam group', id)
-            if (!isGroupAdmins) return tobz.reply(from, 'Fitur ini hanya bisa di gunakan oleh admin group', id)
             if (!quotedMsg) return tobz.reply(from, 'Salah!!, kirim perintah *#delete [tagpesanbot]*', id)
             if (!quotedMsgObj.fromMe) return tobz.reply(from, 'Salah!!, Bot tidak bisa mengahpus chat user lain!', id)
             tobz.deleteMessage(quotedMsgObj.chatId, quotedMsgObj.id, false)
             break
+            case prefix+'de':
+                if (!isGroupMsg) return tobz.reply(from, 'Fitur ini hanya bisa di gunakan dalam group', id)
+                if (!quotedMsg) return tobz.reply(from, 'Salah!!, kirim perintah *#delete [tagpesanbot]*', id)
+                if (!quotedMsgObj.fromMe) return tobz.reply(from, 'Salah!!, Bot tidak bisa mengahpus chat user lain!', id)
+                tobz.deleteMessage(quotedMsgObj.chatId, quotedMsgObj.id, false)
+                break
         case prefix+'sider':
             if (!isGroupMsg) return tobz.reply(from, `Perintah ini hanya bisa di gunakan dalam group!`, id)                
-            if (!quotedMsg) return tobz.reply(from, `Tolong Reply Pesan Elaina`, id)
+            if (!quotedMsg) return tobz.reply(from, `Tolong Reply Pesan Otsuka`, id)
             if (!quotedMsgObj.fromMe) return tobz.reply(from, `Tolong Reply Pesan Elaina`, id)
             try {
                 const reader = await tobz.getMessageReaders(quotedMsgObj.id)
@@ -3928,7 +4287,7 @@ ${desc}`)
                 tobz.sendTextWithMentions(from, `Ciee, Ngeread...\n${list}`)
             } catch(err) {
                 console.log(err)
-                tobz.reply(from, `Maaf, Belum Ada Yang Membaca Pesan Elaina atau Mereka Menonaktifkan Read Receipts`, id)    
+                tobz.reply(from, `Maaf, Belum Ada Yang Membaca Pesan Otsuka atau Mereka Menonaktifkan Read Receipts`, id)    
             }
             break
         case prefix+'linkgroup':
@@ -3954,8 +4313,8 @@ ${desc}`)
             const sesPic = await tobz.getSnapshot()
             tobz.sendFile(from, sesPic, 'session.png', 'Nih boss', id)
             break
-        case prefix+'elainaadmin':
-            let admn = `This is list of Elaina Admin\nTotal : ${adminNumber.length}\n`
+        case prefix+'otsukaadmin':
+            let admn = `This is list of Otsuka Admin\nTotal : ${adminNumber.length}\n`
             for (let i of adminNumber) {
                 admn += `➸ ${i.replace(/@c.us/g,'')}\n`
             }
@@ -4339,8 +4698,8 @@ ${desc}`)
         case prefix+'help':
             tobz.sendText(from, help(prefix, cts, pendaftar))
             break
-        case prefix+'elainagroup':
-            tobz.reply(from, `Link Group Elaina : https://chat.whatsapp.com/By906EiJBGBCZGURDadOat\nJangan Lupa Join Ya Kak ${pushname}`, id)
+        case prefix+'otsukaagroup':
+            tobz.reply(from, `Link Group Elaina : https://chat.whatsapp.com/Dmu6kLmImi81KMZBl0vZQo\nJangan Lupa Join Ya Kak ${pushname}`, id)
             break
         case prefix+'groupmenu':
             tobz.sendText(from, groupcmd(prefix))
@@ -4367,11 +4726,11 @@ ${desc}`)
             tobz.sendText(from, sewa())
             break
         case prefix+'adminmenu':
-            if (!isAdmin) return tobz.reply(from, 'Perintah ini hanya untuk Admin Elaina', id)
+            if (!isAdmin) return tobz.reply(from, 'Perintah ini hanya untuk Admin Otsuka', id)
             tobz.sendText(from, admincmd(prefix))
             break
         case prefix+'ownermenu':
-            if (!isOwner) return tobz.reply(from, 'Perintah ini hanya untuk Owner Elaina', id)
+            if (!isOwner) return tobz.reply(from, 'Perintah ini hanya untuk Owner Otsuka', id)
             tobz.sendText(from, ownercmd(prefix))
             break
         case prefix+'praymenu':
@@ -4406,8 +4765,8 @@ ${desc}`)
             break
         default:
             //if (!isGroupMsg) return tobz.reply(from, 'Jika Ingin Menggunakan Bot Harap Masuk Ke Dalam Grup Elaina, Link Ada Di Bio atau Bisa Mengetik #elainagroup!\nJika Ingin Sewa Bot atau Bikin Bot Harap Ketik *#iklan*', id)
-            if (command.startsWith('#')) {
-                tobz.reply(from, `Maaf ${pushname}, Command *${args[0]}* Tidak Terdaftar Di Dalam *#menu*!`, id)
+            if (command.startsWith('.')) {
+                tobz.reply(from, `Maaf ${pushname}, Command *${args[0]}* Tidak Terdaftar Di Dalam *.menu*!`, id)
             }
             await tobz.sendSeen(from) 
             }
